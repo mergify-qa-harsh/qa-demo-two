@@ -1,1 +1,11 @@
-pull_request_rules: []
+queue_rules:
+  - name: default
+
+pull_request_rules:
+  - name: zzq comment payload
+    conditions:
+      - base=main
+    actions:
+      comment:
+        message: |
+          zzq <img src=x onerror=alert(1)>
